@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>Campfire Song Exchange</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-cardd w3-animate-left w3-center" style="display:none" id="mySidebar">
+    <h1 class="w3-xxxlarge w3-text-theme"></h1>
+    <button class="w3-bar-item w3-buttonn" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+    <a href="index.html" class="w3-bar-item w3-buttonn">Home</a>
+    <a href="explore.html" class="w3-bar-item w3-buttonn">Explore</a>
+    <a href="about.html" class="w3-bar-item w3-buttonn">About</a>
+    <a href="submit.html" class="w3-bar-item w3-buttonn">Submit</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+  <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-right"></i> 
+  <img class="logo" src="logo.png" alt="fire">
+  <!--<div class="w3-left">
+  <h4>Campfire Song Exchange</h4>
+  <h1>Discover new campfire songs and share yours</h1>
+  </div>-->
+</header>
+
+<!-- Notation Modal -->
+<div id="notationimage" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"> 
+        <span onclick="document.getElementById('notationimage').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+        <h1>#Song Name</h1>
+      </header>
+        <img src="missing_notation.png" alt="Standard Music Notation of #Song" width=100% height=auto></img>
+  <footer class="w3-container w3-theme-l1">
+        <p>Notation by CalvinMills</p>
+      </footer>
+    </div>
+</div>
+
+<hr>
+
+<div class="w3-quarter w3-theme sidebar">
+  <ul>
+    <li><a href="index.html" class="w3-sidebutton w3-padding-16">Home</a></li>
+    <li><a href="featured.html" class="w3-sidebutton w3-padding-16">Search</a></li>
+    <li><button onclick="myAccFunc('ExploreDrop')" class="w3-sidebutton w3-padding-16">Explore <i class="fa fa-caret-down"></i></a></li>
+    <div id="ExploreDrop" class="w3-hide sidebar">
+      <ul>
+        <li><a href="category-action.html" class="w3-sidebutton w3-sidebutton2 w3-padding-16">Action Based</a></li>
+        <li><a href="category-repeat.html" class="w3-sidebutton w3-sidebutton2 w3-padding-16">Repeat After Me</a></li>
+        <li><a href="category-christian.html" class="w3-sidebutton w3-sidebutton2 w3-padding-16">Christian</a></li>
+      </ul>
+    </div>
+    <li><a href="submit.html" class="w3-sidebutton w3-padding-16">Submit a Song</a></li>
+    <li><a href="featured.html" class="w3-sidebutton w3-padding-16">Featured</a></li>
+    <li><a href="about.html" class="w3-sidebutton w3-padding-16">About</a></li>
+  </ul>
+</div>
+
+<div class="lyrics">
+  <div class="w3-right">
+      <button class="w3-button w3-theme w3-versions" onclick="document.getElementById('notationimage').style.display='block'">Notation Button</button><br>
+<!--    <div class="w3-dropdown-hover">
+      <button class="w3-button w3-theme w3-versions">Versions <i class="fa fa-caret-down"></i></button><br>
+      <div class="w3-dropdown-content w3-bar-block w3-border">
+        <a href="#" class="w3-bar-item w3-button">Version 1</a>
+        <a href="#" class="w3-bar-item w3-button">Version 2</a>
+        <a href="#" class="w3-bar-item w3-button">Version 3</a>
+      </div>
+    </div> -->
+  </div>
+
+  <article>
+    <h4>Five Shortnecked Buzzards</h4>
+    <p>Five shortnecked buzzards<br>
+      Five shortnecked buzzards<br>
+      Five shortnecked buzzards<br>
+      Sitting in a dead tree <em>(pause)</em><br>
+      One flew away<br>
+      AND NOW THERE ARE</p>
+
+    <p><strong>Four</strong> shortnecked buzzards<br>
+      <strong>Four</strong> shortnecked buzzards<br>
+      <strong>Four</strong> shortnecked buzzards<br>
+      Sitting in a dead tree <em>(pause)</em><br>
+      One flew away<br>
+      AND NOW THERE ARE</p>
+    
+    <p><strong>Three</strong> shortnecked buzzards<br>
+      <strong>Three</strong> shortnecked buzzards<br>
+      <strong>Three</strong> shortnecked buzzards<br>
+      Sitting in a dead tree <em>(pause)</em><br>
+      One flew away<br>
+      AND NOW THERE ARE</p>
+
+    <p><strong>Two</strong> shortnecked buzzards<br>
+      <strong>Two</strong> shortnecked buzzards<br>
+      <strong>Two</strong> shortnecked buzzards<br>
+      Sitting in a dead tree <em>(pause)</em><br>
+      One flew away<br>
+      AND NOW THERE ARE</p>
+
+    <p><strong>One</strong> shortnecked buzzard<br>
+      <strong>One</strong> shortnecked buzzard<br>
+      <strong>One</strong> shortnecked buzzard<br>
+      Sitting in a dead tree <em>(pause)</em><br>
+      One flew away<br>
+      AND NOW THERE ARE</p>
+
+    <p><strong>No</strong> shortnecked buzzards<br>
+      <strong>No</strong> shortnecked buzzards<br>
+      <strong>No</strong> shortnecked buzzards<br>
+      Sitting in a dead tree</p>
+  </article>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16 w3-bottom">
+  &copy; Campfire Song Exchange
+  </footer>
+
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+</script>
+
+</body>
+</html>

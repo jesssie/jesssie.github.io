@@ -1,0 +1,396 @@
+html, body {
+    height: 100%;
+    background-color: #ffffff;
+    font-family: century gothic;
+
+}
+.bg-pic{
+    height: 100%;
+    background-image: url("fire.png");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #3d3d3d;
+}
+#wrapper {
+    height: 100%;
+}
+
+/* ------- NAVIGATION ------- */ 
+
+/* hamburger navigation all pages */
+.w3-button {
+    border: none;
+    display: inline-block;
+    background-color: #ffffff00;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+.w3-button:hover {
+    color:#a9aa9f!important;
+    background-color: transparent!important;
+    margin: 0;
+    padding: 0;
+}
+.w3-buttonn {
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+}
+.w3-buttonn:hover {
+    color:#a9aa9f!important;
+    background-color: transparent!important;
+}
+.w3-cardd, .w3-card-2 {
+    box-shadow: none;
+    background-color: #ffffff;
+    opacity: 0.97;
+    color: #ffffff;
+}
+/* songpage sidebar menu */
+div.sidebar ul{
+    list-style-type: none;
+    padding: 0;
+}
+div.sidebar ul a{
+    text-decoration: none;
+}
+.w3-sidebutton {
+    border: none;
+    display: inline-block;
+    text-decoration: none;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-align: left;
+    outline: 0;
+    padding: 13px 0 13px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    width: 100%;
+}
+.w3-sidebutton:hover {
+    color: #000!important;
+    background-color: #ccc!important;
+}
+
+/* ------- HEADER ------- */ 
+.w3-left {
+    width: 100%;
+}
+/* main heading home page*/
+.w3-left h4 {
+    font-family: century gothic;
+    font-size: 3.3em;
+    font-weight: lighter;
+    text-align: center;
+    padding: 0.4em 0 0.4em 0;
+    margin: -0.5em;
+    color: #ffffff;
+}
+/* sub heading home page */
+.w3-left h1 {
+    font-family: century gothic;
+    font-weight: lighter;
+    font-size: 2em;
+    text-align: center;
+    padding: 0.5em 0 0.7em 0;
+    margin: 0;
+    color: #ffffff;
+}
+/* header style */
+.w3-theme {
+    background-color: #3d3d3d!important;
+    background-image: url("fire.png");
+    background-size: cover;
+    background-position: center top;
+}
+.w3-theme h1{
+    color: #ffffff !important;
+    background-color:rgba(219, 82, 82, 0) !important;
+}
+/* logo home page */
+#logo {
+    width: 120px;
+    margin: 0 auto;
+    margin-left: 45%;
+    padding-top: 1.5em;
+}
+/* logo in header other pages */
+.logo {
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding: 2em 0 2.5em 0;
+}
+
+
+/* ------- MAIN ------- */
+
+/* icons homepage */ 
+.material-icons {
+    font-size: 120px;
+    color: #ffffff;
+}
+.w3-row-padding, w3-center, w3-margin-top {
+    margin: 0 8em 0 8em;
+    padding-top: 0.7em;
+}
+.w3-third {
+    background-color: transparent;
+}
+.w3-card, .w3-card-2 {
+    box-shadow: none;
+    background-color: #f1f1f100;
+    opacity: 0.95;
+    color: #ffffff;
+}
+/*  about campfire song exchange  */ 
+#about {
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    font-size: 1.2em;
+}
+#about h3 {
+    color: rgb(69, 88, 4);
+    font-family: Century gothic; 
+    font-size: 2em;
+    margin-top: 2em;
+}
+#about p {
+    color: #000000;
+    font-family: calibri;
+    font-size: 1em;
+}
+
+/*  submit heading  */
+.heading-submit {
+    font-family: Century gothic; 
+    text-align: center;
+    padding-top: 1.5em;
+}
+.p-submit {
+    font-family: Calibri; 
+    font-size: 1em;
+    text-align: center;
+}
+
+/*  submit form  */
+input[type=text], select, file, textarea {
+    width: 70%;
+    padding: 0.5em 1em;
+    margin: 1em 0 2em auto;
+    display: inline-block;
+    border: 1px solid rgb(170, 170, 170);
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #3a3a3a;
+    font-size: 1em;
+    font-family: calibri;
+}
+
+input[type=file]{
+    padding: 0 0 0.5em;
+    margin: 1em 0 2em auto;
+    color: #3a3a3a;
+}
+input[type=submit]{
+    width: 70px;
+    padding: 0.2em;
+    margin: -2em 0 2em 0;
+    color: #ffffff;
+    background-color: #429247;
+    border: solid 1px #234b25;
+    font-family: calibri;
+}
+.form-style {
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 100%;
+    margin-top: 2em;
+    margin-left: 15%;
+}   
+label {
+    font-weight: bold;
+    font-family: century gothic;
+    font-size: 1em;
+}
+
+/* top lists */
+#top-list {
+    width: 50%;
+    float: left;
+    margin: 1em 0 0 0;
+    padding: 3em 0 1em 0;
+}
+#top-list h3, h4 {
+    text-align: center;
+}
+#top-list ol{
+    padding-left: 20%;
+    width: 85%;
+}
+#top-list i {
+    float: right;
+    padding-right: 1em;
+}
+
+#new-add-list {
+    width: 50%;
+    float: left;
+    margin: 1em 0 0 0;
+    padding: 3em 0 1em 0;
+}
+#new-add-list h3, h4 {
+    text-align: center;
+}
+#new-add-list ol{
+    padding-left: 20%;
+    width: 85%;
+}
+#new-add-list i {
+    float: right;
+    padding-right: 1em;
+}
+
+/* ------- FOOTER ------- */ 
+/* footer style */
+.w3-theme-dark {
+    color: #ffffff !important;
+    background-color: #242020 !important;
+}
+.w3-top, .w3-bottom {
+    position: relative;
+    width: 100%;
+    height: 15%;
+}
+
+/* 'back to top' icon */
+.w3-text-white, .w3-hover-text-white:hover {
+    color: #000000!important;
+    text-align: center;
+}
+
+div.lyrics article{
+    margin-left: 0px;
+    border-left: 0;
+    padding: 1em;
+    overflow: hidden;
+  }
+
+/* ------- MEDIA QUERY ------- */
+/* h3 + p tag submit page */
+@media only screen and (max-width: 768px) {
+    .heading-submit {
+        font-family: Century gothic; 
+        text-align: center;
+        padding-top: 2em;
+        margin: 1.5em;
+    }
+    .p-submit {
+        font-family: Calibri; 
+        font-size: 1em;
+        text-align: center;
+        margin: 1.5em;
+    }
+}
+
+/* icons home page */
+@media only screen and (max-width: 768px) {
+    .material-icons {
+        font-size: 130px;        
+        margin-top: 0.5em;
+        padding: 0;
+        text-align: center;
+    }
+}
+
+/* top lists */
+@media only screen and (max-width: 768px) {
+    #top-list {
+        width: 100%;
+        margin: 1em 0 0 0;
+    }
+    #new-add-list {
+        width: 100%;
+        margin: 1em 0 0 0;
+    }
+}
+
+/* background home page */
+@media only screen and (max-width: 800px) {
+    .bg-pic{
+        height: 60%;
+        background-image: url("fire.png");
+        background-repeat: no-repeat;
+        background-color: #3d3d3d;
+        background-position: center center;
+    }
+}
+
+/* icons in modal */ 
+@media only screen and (max-width: 800px) {
+    .material-icons {
+        font-size: 120px;
+        color: #000000;
+    }
+    .w3-row-padding, w3-center, w3-margin-top {
+        margin: 0;
+        padding-top: 0;
+    }
+    .w3-third {
+        background-color: transparent;
+    }
+    .w3-card, .w3-card-2 {
+        box-shadow: none;
+        background-color: #f1f1f100;
+        opacity: 0.95;
+        color: #000000;
+    }
+}
+/* logo home page */ 
+@media only screen and (max-width: 800px) {
+    #logo {
+        width: 85px;
+        margin: 0 auto;
+        margin-left: 38%;
+        padding-top: 1.5em;
+    }
+}
+/* logo */ 
+@media only screen and (max-width: 800px) {
+    .logo {
+        width: 90px;
+        margin: 0 auto;
+        margin-left: 38%;
+        padding-top: 1.5em;
+    }
+}
+
+/* main heading home page*/
+@media only screen and (max-width: 800px) {
+    .w3-left h4 {
+        font-family: century gothic;
+        font-size: 1.8em;
+        text-align: center;
+        padding: 0.4em;
+        margin: 0;
+        color: #ffffff;
+    }
+    /* sub heading home page */
+    .w3-left h1 {
+        font-family: century gothic;
+        font-size: 1.2em;
+        text-align: center;
+        padding: 1em;
+        margin: 0;
+        color: #ffffff;
+    }
+}
+
+.w3-half {
+    background-color: #ffffff
+}

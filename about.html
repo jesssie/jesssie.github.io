@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>Campfire Song Exchange</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<body>
+<div class="wrapper">
+
+<!-- Side Navigation -->
+<nav class="w3-sidebar w3-bar-block w3-cardd w3-animate-left w3-center" style="display:none" id="mySidebar">
+    <h1 class="w3-xxxlarge w3-text-theme"></h1>
+    <button class="w3-bar-item w3-buttonn" onclick="w3_close()">Close <i class="fa fa-remove"></i></button>
+    <a href="index.html" class="w3-bar-item w3-buttonn">Home</a>
+    <a href="explore.html" class="w3-bar-item w3-buttonn">Explore</a>
+    <a href="about.html" class="w3-bar-item w3-buttonn">About</a>
+    <a href="submit.html" class="w3-bar-item w3-buttonn">Submit</a>
+</nav>
+
+<!-- Header -->
+<header class="w3-container w3-theme w3-padding" id="myHeader">
+    <i onclick="w3_open()" class="fa fa-bars w3-xlarge w3-button w3-right"></i> 
+    <img class="logo" src="logo.png" alt="fire">
+    <!--<div class="w3-left">
+    <h4>Campfire Song Exchange</h4>
+    <h1>Discover new campfire songs and share yours</h1>
+    </div>-->
+</header>
+
+<!-- Main -->
+  <div id="about">  
+    <h3>What is Campfire song Exchange?</h3>
+      <p>Campfire song Exchange is a webpage where you can discover and share your camp songs.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor lorem ut arcu aliquam iaculis. 
+        Phasellus at nisi augue. Aliquam non viverra nisi, et vestibulum elit. Maecenas lectus nisi, bibendum 
+        consectetur pulvinar id, convallis et ligula. Phasellus egestas, elit sit amet mattis porta, purus risus 
+        luctus ligula, ut lobortis est diam at nunc. 
+        <br><br>
+        Mauris mi ligula, eleifend id eleifend vitae, congue et ligula. 
+        Phasellus elementum lorem tristique augue commodo, commodo sollicitudin metus eleifend. Praesent eget tellus 
+        ut odio cursus luctus. Donec vel velit id sem aliquam euismod convallis id nunc. Aenean aliquam sodales 
+        ex eget accumsan. </p>
+
+    <h3>What's the purpose with the webpage?</h3>
+      <p>Campfire song Exchange was from the beginning a school project between two undergraduate students at Wilfrid Laurier
+        University in Waterloo, Ontario. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor lorem ut arcu aliquam iaculis. 
+        Phasellus at nisi augue. Aliquam non viverra nisi, et vestibulum elit. Maecenas lectus nisi, bibendum 
+        consectetur pulvinar id, convallis et ligula. Phasellus egestas, elit sit amet mattis porta, purus risus 
+        luctus ligula, ut lobortis est diam at nunc. 
+        <br><br>
+        Mauris mi ligula, eleifend id eleifend vitae, congue et ligula. 
+        Phasellus elementum lorem tristique augue commodo, commodo sollicitudin metus eleifend. Praesent eget tellus 
+        ut odio cursus luctus. Donec vel velit id sem aliquam euismod convallis id nunc. Aenean aliquam sodales 
+        ex eget accumsan. </p>
+
+    <h3>How can I contribute with my songs?</h3>
+      <p>If you miss a song or just want to contribute with your versions of a campfire song, no worries. On the page "??"
+        is it possible to send us your input... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin porttitor lorem ut arcu aliquam iaculis. 
+        Phasellus at nisi augue. Aliquam non viverra nisi, et vestibulum elit. Maecenas lectus nisi, bibendum 
+        consectetur pulvinar id, convallis et ligula. Phasellus egestas, elit sit amet mattis porta, purus risus 
+        luctus ligula, ut lobortis est diam at nunc. 
+        <br><br>
+        Mauris mi ligula, eleifend id eleifend vitae, congue et ligula. 
+        Phasellus elementum lorem tristique augue commodo, commodo sollicitudin metus eleifend. Praesent eget tellus 
+        ut odio cursus luctus. Donec vel velit id sem aliquam euismod convallis id nunc. Aenean aliquam sodales 
+        ex eget accumsan. </p>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16 w3-bottom">
+  &copy; Campfire Song Exchange
+  </footer>
+
+<!-- Script for Sidebar, Tabs, Accordions, Progress bars and slideshows -->
+<script>
+// Side navigation
+function w3_open() {
+    var x = document.getElementById("mySidebar");
+    x.style.width = "100%";
+    x.style.fontSize = "40px";
+    x.style.paddingTop = "10%";
+    x.style.display = "block";
+}
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+
+// Tabs
+function openCity(evt, cityName) {
+  var i;
+  var x = document.getElementsByClassName("city");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  var activebtn = document.getElementsByClassName("testbtn");
+  for (i = 0; i < x.length; i++) {
+      activebtn[i].className = activebtn[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " w3-dark-grey";
+}
+
+var mybtn = document.getElementsByClassName("testbtn")[0];
+mybtn.click();
+
+// Accordions
+function myAccFunc(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Slideshows
+var slideIndex = 1;
+
+function plusDivs(n) {
+slideIndex = slideIndex + n;
+showDivs(slideIndex);
+}
+
+function showDivs(n) {
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length} ;
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+
+showDivs(1);
+
+// Progress Bars
+function move() {
+  var elem = document.getElementById("myBar");   
+  var width = 5;
+  var id = setInterval(frame, 10);
+  function frame() {
+    if (width == 100) {
+      clearInterval(id);
+    } else {
+      width++; 
+      elem.style.width = width + '%'; 
+      elem.innerHTML = width * 1  + '%';
+    }
+  }
+}
+</script>
+
+</body>
+</html>
