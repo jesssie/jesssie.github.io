@@ -395,3 +395,8 @@ div.lyrics article{
 .w3-half {
     background-color: #ffffff
 }
+
+.w3-themeee w3-container {
+    background-image: none;
+    background-color: #ffffff;
+}
