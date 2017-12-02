@@ -261,6 +261,7 @@ label {
 .w3-theme-dark {
     color: #ffffff !important;
     background-color: #242020 !important;
+    text-align: center;
 }
 .w3-top, .w3-bottom {
     position: relative;
